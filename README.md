@@ -1,6 +1,6 @@
-# praction-engine
+# Praction engine
 
-praction-engine is my attempt to make a game engine. I will be following the guidance TheChernoProject and other internet related resources in this endeavor. 
+Praction engine is my attempt to make a game engine. I will be following the guidance TheChernoProject's Hazel engine and other internet related resources in this endeavor. 
 
 ## Features in development
 * Game Engine Framework

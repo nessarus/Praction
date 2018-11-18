@@ -57,7 +57,8 @@ We need a number of various systems:
         * translating data into or out of marked languages
 * tools
     * level editor
+    * scripting
 
-## Next Lesson Planning Lessons
+## Next Planning Lessons
 * planned game engine features 
 * plans on making each game engine feature
