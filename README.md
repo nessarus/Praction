@@ -15,4 +15,9 @@ Praction engine is my attempt to make a game engine. I will be following the gui
 * File management system (virtual support)
 * Build system
 
+## Patch notes:
 
+### 0.0.4 Entry Point
+* Projects can now create Praction engine's applications objects
+
+### 0.0.1 Initial setup
