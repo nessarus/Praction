@@ -17,7 +17,10 @@ Praction engine is my attempt to make a game engine. I will be following the gui
 
 ## Patch notes:
 
-### 0.0.4 Entry Point
-* Projects can now create Praction engine's applications objects
+* Patch 0.0.5 Logger
+Clients have now access to a error display logger. 
 
-### 0.0.1 Initial setup
+* Patch 0.0.4 Entry Point  
+Clients can now create Praction engine's applications objects
+
+* Patch 0.0.1 Initial setup

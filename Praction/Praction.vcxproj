@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Praction\Log.h" />
     <ClInclude Include="src\Praction.h" />
     <ClInclude Include="src\Praction\Application.h" />
     <ClInclude Include="src\Praction\Core.h" />
     <ClInclude Include="src\Praction\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Praction\Log.cpp" />
     <ClCompile Include="src\Praction\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -67,6 +69,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>PT_PLATFORM_WINDOWS;PT_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Praction\vendor\spdlog\include; </AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -78,6 +81,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>PT_PLATFORM_WINDOWS;PT_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Praction\vendor\spdlog\include; </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
