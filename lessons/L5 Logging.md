@@ -1,6 +1,6 @@
 # Logging
 
-Developing games are an error prone business. Some bugs are not visible using just breakpoint and watch windows. Printf debugging helps display the program internal state. 
+Developing games are an error prone business. Some bugs are not visible using just breakpoint and watch windows. printf debugging helps display the program internal state. 
 
 Win32 does not have a console however it does provide the function OutputDebugString().
 
@@ -12,7 +12,7 @@ As this will be an external library, we will use Git's sub-module to attach it o
 
 Open Praction directory in CMD.
 
-~ >> git submodule add https://github.com/gabime/spdlog Praction/vendor/spdlog
+~ >> git sub-module add https://github.com/gabime/spdlog Praction/vendor/spdlog
 
 In the game engines' and sandbox's properties:
 C/C++ >> General >> Additional Include Directories >> add
