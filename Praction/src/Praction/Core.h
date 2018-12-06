@@ -11,3 +11,6 @@
 	#error Praction only supports Windows!
 #endif
 	
+// BIT(x) is shift 1 to x place i.e. BIT(2) is 100
+// This is to allow events to belong to multiple categories.
+#define BIT(x) (1 << x)

@@ -4,6 +4,9 @@
     <Filter Include="Praction">
       <UniqueIdentifier>{85263A81-71F3-948C-9A0C-83348638CA1A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Praction\Events">
+      <UniqueIdentifier>{C9AA3CEB-3536-AAAF-3E47-2DA4AA5106B0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Praction.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Praction\EntryPoint.h">
       <Filter>Praction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Praction\Events\ApplicationEvent.h">
+      <Filter>Praction\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Praction\Events\Event.h">
+      <Filter>Praction\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Praction\Events\KeyEvent.h">
+      <Filter>Praction\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Praction\Events\MouseEvent.h">
+      <Filter>Praction\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Praction\Log.h">
       <Filter>Praction</Filter>

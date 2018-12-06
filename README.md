@@ -17,6 +17,12 @@ Praction engine is my attempt to make a game engine. I will be following the gui
 
 ## Patch notes:
 
+* Patch 0.0.7 Events
+Created Event, mouse event, keyboard event, application classes.
+
+* Patch 0.0.6 Premake
+Created premake5.lua to assist in automating generation of project files 
+
 * Patch 0.0.5 Logger
 Clients have now access to a error display logger. 
 
