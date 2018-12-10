@@ -2,9 +2,6 @@
 
 #include "Praction/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Praction {
 	// Praction is currently using blocking code to handle events.
 

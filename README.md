@@ -16,6 +16,8 @@ Praction engine is my attempt to make a game engine. I will be following the gui
 * Build system
 
 ## Patch notes:
+* Patch 0.0.8 Precompiled headers
+Added in precompiled headers file. 
 
 * Patch 0.0.7 Events
 Created Event, mouse event, keyboard event, application classes.

@@ -26,6 +26,10 @@ project "Praction"
     --[[ object files --]]
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	--[[ precompiled files --]]
+	pchheader "ptpch.h"
+	pchsource "Praction/src/ptpch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",

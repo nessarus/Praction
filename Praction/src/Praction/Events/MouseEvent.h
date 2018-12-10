@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Praction {
 	
 	class PRACTION_API MouseMovedEvent : public Event

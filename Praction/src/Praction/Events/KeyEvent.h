@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Praction {
 	
 	// key events are when the user presses keys on keyboard
