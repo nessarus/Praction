@@ -14,6 +14,13 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 --[[ cfg.system         : windows/mac/linux --]]
 --[[ cfg.architecture   : x64/x86/etc --]]
 
+-- Include directories are set relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Praction/vendor/GLFW/include"
+-- IncludeDir is a struct that will grow as more directories are to be included
+
+include "Praction/vendor/GLFW"
+
 project "Praction"
     location "Praction"
     kind "SharedLib"
@@ -39,7 +46,14 @@ project "Praction"
     includedirs
     {
 		"%{prj.name}/src",
-        "%{prj.name}/vendor/spdlog/include"
+        "%{prj.name}/vendor/spdlog/include", 
+        "%{IncludeDir.GLFW}"
+    }
+
+    links
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "ptpch.h"
 #include "Praction/Core.h"
 
 namespace Praction {

@@ -14,6 +14,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Praction/Log.h"
+
 #ifdef PT_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

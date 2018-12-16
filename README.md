@@ -2,6 +2,10 @@
 
 Praction engine is my attempt to make a game engine. I will be following the guidance TheChernoProject's Hazel engine and other internet related resources in this endeavor. 
 
+## Features
+* Windowing (windows only)
+* Debugging Tools (Logger)
+
 ## Features in development
 * Game Engine Framework
 * Windowing (desktop only for now)
@@ -16,6 +20,9 @@ Praction engine is my attempt to make a game engine. I will be following the gui
 * Build system
 
 ## Patch notes:
+* Patch 0.0.9 Window Abstraction and GLFW
+Added in Window class using GLFW
+
 * Patch 0.0.8 Precompiled headers
 Added in precompiled headers file. 
 

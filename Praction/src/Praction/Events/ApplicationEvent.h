@@ -2,11 +2,10 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 
 // Class to handle events
 namespace Praction {
+
 	class PRACTION_API WindowResizeEvent : public Event
 	{
 	public:
