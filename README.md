@@ -20,6 +20,9 @@ Praction engine is my attempt to make a game engine. I will be following the gui
 * Build system
 
 ## Patch notes:
+* Patch 0.0.10 Window Event
+Added in the Window Event system.
+
 * Patch 0.0.9 Window Abstraction and GLFW
 Added in Window class using GLFW
 
