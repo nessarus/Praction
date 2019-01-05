@@ -20,12 +20,31 @@ namespace Praction {
 	{
 	}
 
+	// Wrapper for application to push new layer to layer stack
+	void Application::PushLayer(Layer* layer)
+	{
+		m_LayerStack.PushLayer(layer);
+	}
+
+	// Wrapper for application to push new overlay to layer stack
+	void Application::PushOverlay(Layer* layer)
+	{
+		m_LayerStack.PushOverlay(layer);
+	}
+
 	void Application::OnEvent(Event & e)
 	{
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 
-		PT_CORE_TRACE("{0}", e);
+		// handle each event by going backwards through the layer stack 
+		// (e.g. button on top of background gets clicked first)
+		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin(); )
+		{
+			(*--it)->OnEvent(e);
+			if (e.Handled)
+				break;
+		}
 	}
 
 	// game engine's application run loop
@@ -36,6 +55,11 @@ namespace Praction {
 		{
 			glClearColor(1, 0, 1, 1);
 			glClear(GL_COLOR_BUFFER_BIT);
+
+			// iterate over the layer stack and update layer (frame)
+			for (Layer* layer : m_LayerStack)
+				layer->OnUpdate();
+
 			m_Window->OnUpdate();
 		}
 	}

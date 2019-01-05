@@ -37,8 +37,10 @@ namespace Praction {
 	// base class for events
 	class PRACTION_API Event
 	{
-		friend class EventDispatcher;
 	public:
+		// stores if the event has been already handled
+		bool Handled = false;
+
 		// event type, name and flags get functions
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
@@ -52,9 +54,6 @@ namespace Praction {
 		{
 			return GetCategoryFlags() & category;
 		}
-	protected:
-		// stores if the event has been already handled
-		bool m_Handled = false;
 	};
 
 	// Dispatcher recieves a reference to an event (Event& event)
@@ -75,7 +74,7 @@ namespace Praction {
 			// checks if the event matches with the dispatch arguement
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m_Event.m_Handled = func(*(T*)&m_Event);
+				m_Event.Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;

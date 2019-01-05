@@ -40,6 +40,12 @@
     <ClInclude Include="src\Praction\Events\MouseEvent.h">
       <Filter>Praction\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Praction\Layer.h">
+      <Filter>Praction</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Praction\LayerStack.h">
+      <Filter>Praction</Filter>
+    </ClInclude>
     <ClInclude Include="src\Praction\Log.h">
       <Filter>Praction</Filter>
     </ClInclude>
@@ -53,6 +59,12 @@
       <Filter>Plaform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Praction\Application.cpp">
+      <Filter>Praction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Praction\Layer.cpp">
+      <Filter>Praction</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Praction\LayerStack.cpp">
       <Filter>Praction</Filter>
     </ClCompile>
     <ClCompile Include="src\Praction\Log.cpp">

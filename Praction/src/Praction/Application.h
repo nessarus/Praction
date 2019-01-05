@@ -1,11 +1,14 @@
 #pragma once
 
 #include "Core.h"
-#include "Events/Event.h"
+
+#include "Window.h"
+
+#include "Praction/LayerStack.h"
+#include "Praction/Events/Event.h"
 #include "Praction/Events/ApplicationEvent.h"
 
 
-#include "Window.h"
 
 namespace Praction {
 	
@@ -20,13 +23,15 @@ namespace Praction {
 
 		void OnEvent(Event& e);
 
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* layer);
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 
 
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
-
+		LayerStack m_LayerStack;
 	};
 
 	// Allows projects to create a new game engine application object

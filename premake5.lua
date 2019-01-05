@@ -75,15 +75,18 @@ project "Praction"
 
     filter "configurations:Debug"
         defines "PT_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "PT_RELEASE"
-        symbols "On"
+        buildoptions "/MD"
+        optimize "On"
     
     filter "configurations:Dist"
         defines "PT_DIST"
-        symbols "On"
+        buildoptions "/MD"
+        optimize "On"
 
 project "Sandbox"
     location "Sandbox"
@@ -125,13 +128,16 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "PT_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "PT_RELEASE"
-        symbols "On"
+        buildoptions "/MD"
+        optimize "On"
     
     filter "configurations:Dist"
         defines "PT_DIST"
-        symbols "On"
+        buildoptions "/MD"
+        optimize "On"
 
