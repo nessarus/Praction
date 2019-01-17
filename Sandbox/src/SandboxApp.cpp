@@ -28,6 +28,10 @@ public:
 	{
 		// example of how to contruct and add a layer to the layer stack.
 		PushLayer(new ExampleLayer());
+
+		// ImGui layer i.e. debug menu
+		PushOverlay(new Praction::ImGuiLayer());
+
 	}
 
 	~Sandbox()

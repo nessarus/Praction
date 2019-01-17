@@ -6,6 +6,8 @@
 #include "Praction/Layer.h"
 #include "Praction/Log.h"
 
+#include "Praction/ImGui/ImGuiLayer.h"
+
 // ---Entry Point-------------------
 #include "Praction/EntryPoint.h"
 

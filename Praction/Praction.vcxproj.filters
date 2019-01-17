@@ -13,6 +13,9 @@
     <Filter Include="Praction\Events">
       <UniqueIdentifier>{C9AA3CEB-3536-AAAF-3E47-2DA4AA5106B0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Praction\ImGui">
+      <UniqueIdentifier>{6FABC89A-5B79-BCA0-440D-2DC7307A9805}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Plaform\Windows\WindowsWindow.h">
@@ -40,6 +43,9 @@
     <ClInclude Include="src\Praction\Events\MouseEvent.h">
       <Filter>Praction\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Praction\ImGui\ImGuiLayer.h">
+      <Filter>Praction\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Praction\Layer.h">
       <Filter>Praction</Filter>
     </ClInclude>
@@ -53,6 +59,7 @@
       <Filter>Praction</Filter>
     </ClInclude>
     <ClInclude Include="src\ptpch.h" />
+    <ClInclude Include="src\Plaform\OpenGL\ImGuiOpenGLRenderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Plaform\Windows\WindowsWindow.cpp">
@@ -71,5 +78,7 @@
       <Filter>Praction</Filter>
     </ClCompile>
     <ClCompile Include="src\ptpch.cpp" />
+    <ClCompile Include="src\Praction\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Plaform\OpenGL\ImGuiOpenGLRenderer.cpp" />
   </ItemGroup>
 </Project>

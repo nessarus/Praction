@@ -17,9 +17,13 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories are set relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Praction/vendor/GLFW/include"
+IncludeDir["Glad"] = "Praction/vendor/Glad/include"
+IncludeDir["ImGui"] = "Praction/vendor/imgui"
 -- IncludeDir is a struct that will grow as more directories are to be included
 
 include "Praction/vendor/GLFW"
+include "Praction/vendor/Glad"
+include "Praction/vendor/imgui"
 
 project "Praction"
     location "Praction"
@@ -47,12 +51,16 @@ project "Praction"
     {
 		"%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include", 
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}"
     }
 
     links
     {
         "GLFW",
+        "Glad",
+        "ImGui",
         "opengl32.lib"
     }
 
@@ -64,7 +72,8 @@ project "Praction"
         defines
         {
             "PT_PLATFORM_WINDOWS", 
-            "PT_BUILD_DLL"
+            "PT_BUILD_DLL",
+            "GLFW_INCLUDE_NONE"
         }
 
         --[[ automatically copies game engine's dll into sanbox's after each build --]]
