@@ -23,15 +23,15 @@ namespace Praction {
 }
 
 // Core log macros
-#define PT_CORE_TRACE(...) ::Praction::Log::GetCoreLogger()->trace(__VA_ARGS__)
-#define PT_CORE_INFO(...)  ::Praction::Log::GetCoreLogger()->info(__VA_ARGS__)
-#define PT_CORE_WARN(...)  ::Praction::Log::GetCoreLogger()->warn(__VA_ARGS__)
-#define PT_CORE_ERROR(...) ::Praction::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define PT_CORE_FATAL(...) ::Praction::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+#define PT_CORE_TRACE(...)	::Praction::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define PT_CORE_INFO(...)	::Praction::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define PT_CORE_WARN(...)	::Praction::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define PT_CORE_ERROR(...)	::Praction::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define PT_CORE_FATAL(...)	::Praction::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 // Client log macros
-#define PT_TRACE(...) ::Praction::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define PT_INFO(...)  ::Praction::Log::GetClientLogger()->info(__VA_ARGS__)
-#define PT_WARN(...)  ::Praction::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define PT_ERROR(...) ::Praction::Log::GetClientLogger()->error(__VA_ARGS__)
-#define PT_FATAL(...) ::Praction::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define PT_TRACE(...)		::Praction::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define PT_INFO(...)		::Praction::Log::GetClientLogger()->info(__VA_ARGS__)
+#define PT_WARN(...)		::Praction::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define PT_ERROR(...)		::Praction::Log::GetClientLogger()->error(__VA_ARGS__)
+#define PT_FATAL(...)		::Praction::Log::GetClientLogger()->fatal(__VA_ARGS__)

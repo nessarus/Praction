@@ -62,10 +62,10 @@ namespace Praction {
 		int m_Button;
 	};
 
-	class PRACTION_API MouseButtonPrssedEvent : public MouseButtonEvent
+	class PRACTION_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonPrssedEvent(int button)
+		MouseButtonPressedEvent(int button)
 			: MouseButtonEvent(button) {}
 
 		std::string ToString() const override
