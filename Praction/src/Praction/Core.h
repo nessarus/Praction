@@ -11,6 +11,10 @@
 	#error Praction only supports Windows!
 #endif
 
+#ifdef PT_DEBUG
+	#define PT_ENABLE_ASSETS
+#endif
+
 // PT_ENABLE_ASSERTS checkes if the program is in debug or release, then adds or removes assert statements accordingly
 #ifdef PT_ENABLE_ASSERTS
 	// ASSERTS checks a certain condition then inserts a breakpoint (windows only at the moment)
